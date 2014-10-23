@@ -1,5 +1,7 @@
 package com.ira.classwork4;
 
+import org.junit.Assert;
+import org.junit.Test;
 import java.util.Arrays;
 
 /**
@@ -12,11 +14,11 @@ public class PersonMergeDelegate {
         this.personMerge = personMerge;
     }
 
-    public  Person[] mergePerson(Person[] person1, Person[] person2) {
-        Person[] persons = personMerge.mergePerson(person1, person2);
+    public Person[] mergeInnerPerson(Person[] person1, Person[] person2) {
+        Person[] persons = personMerge.mergeInnerPerson(person1, person2);
 
         System.out.println("result = "+ Arrays.toString(persons));
         return persons;
-
     }
+
 }
